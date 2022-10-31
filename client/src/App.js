@@ -1,10 +1,25 @@
-
-import './App.css';
+import './App.css'
+import Header from './components/Header'
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Child from './pages/Child'
+import Adult from './pages/Adult'
 
 function App() {
   return (
-    <div><h1>This is the homepage</h1></div>
+    <div className="App">
+      <header>
+        <Header />
+      </header>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/childrides" element={<Child />} />
+          <Route path="/adultrides" element={<Adult />} />
+        </Routes>
+      </main>
+    </div>
   )
 }
 
-export default App;
+export default App
