@@ -56,7 +56,7 @@
 ### **_Future Updates_**
 
 - [ ] User Authentication
-- [ ] Mobil Friendly
+- [ ] Mobile Friendly
 - [ ] Implement Third party API
 
 ---
