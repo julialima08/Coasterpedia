@@ -1,4 +1,20 @@
+import axios from 'axios'
+import { useParams } from 'react-router-dom'
+import { useEffect } from 'react'
+
 function KidRideDetails(props) {
+  let { id } = useParams()
+
+  const getRideById = async () => {
+    let response = await axios.get(`http://localhost:3001/api/kids/${id}`)
+    console.log(response.data)
+    props.setRide(response.data)
+  }
+
+  useEffect(() => {
+    getRideById()
+  }, [])
+
   return (
     <div className="KidRideDetails">
       <img src={props.image}></img>
