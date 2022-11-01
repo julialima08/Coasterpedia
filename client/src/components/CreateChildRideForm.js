@@ -1,71 +1,125 @@
+import { useState } from 'react'
+
 const CreateChildRideForm = (props) => {
+  const [popUp, setPopUp] = useState(false)
+
+  const togglePopUp = () => {
+    setPopUp(!popUp)
+  }
+
+  if (popUp) {
+    document.body.classList.add('active-popUp')
+  } else {
+    document.body.classList.remove('active-popUp')
+  }
+
+  const handleSubmit = async (e) => {
+    await props.addRide(e)
+    togglePopUp()
+  }
+
+  // const newRide = props.newRide
+
   return (
-    <form className="form-list">
-      <button className="submit">Submit</button>
-      <input
-        className="input"
-        type="text"
-        value={props.image}
-        placeholder={'ride image'}
-        name="rideImage"
-      />
-      <input
-        className="input"
-        type="text"
-        value={props.name}
-        placeholder={'ride name'}
-        name="rideName"
-      />
-      <input
-        className="input"
-        type="text"
-        value={props.description}
-        placeholder={'ride description'}
-        name="rideDescription"
-      />
-      <input
-        className="input"
-        type="text"
-        value={props.height}
-        placeholder={'ride height'}
-        name="rideHeight"
-      />
-      <input
-        className="input"
-        type="text"
-        value={props.capacity}
-        placeholder={'ride capacity'}
-        name="rideCapacity"
-      />
-      <input
-        className="input"
-        type="text"
-        value={props.pass}
-        placeholder={'is flash pass required?'}
-        name="ridePass"
-      />
-      <input
-        className="input"
-        type="text"
-        value={props.location}
-        placeholder={'ride location'}
-        name="rideLocation"
-      />
-      <input
-        className="input"
-        type="text"
-        value={props.year}
-        placeholder={'year made'}
-        name="rideYear"
-      />
-      <input
-        className="input"
-        type="text"
-        value={props.rating}
-        placeholder={'ride rating'}
-        name="rideRating"
-      />
-    </form>
+    <>
+      <button onClick={togglePopUp} className="btn-popUp">
+        Add new ride
+      </button>
+
+      {popUp && (
+        <div className="popUp">
+          <div onClick={togglePopUp} className="overlay"></div>
+          <div className="popUp-content">
+            <button className="close-popUp" onClick={togglePopUp}>
+              CLOSE
+            </button>
+            <form onSubmit={handleSubmit} className="form-list">
+              <button className="submit">Submit</button>
+              <input
+                className="input"
+                type="text"
+                value={props.newRide.image}
+                placeholder={'ride image'}
+                name="image"
+                onChange={props.handleChange}
+              />
+              <input
+                className="input"
+                type="text"
+                value={props.newRide.name}
+                placeholder={'ride name'}
+                name="name"
+                onChange={props.handleChange}
+              />
+              <input
+                className="input"
+                type="text"
+                value={props.newRide.description}
+                placeholder={'ride description'}
+                name="description"
+                onChange={props.handleChange}
+              />
+              <input
+                className="input"
+                type="text"
+                value={props.newRide.height}
+                placeholder={'ride height'}
+                name="height"
+                onChange={props.handleChange}
+              />
+              <input
+                className="input"
+                type="text"
+                value={props.newRide.capacity}
+                placeholder={'ride capacity'}
+                name="capacity"
+                onChange={props.handleChange}
+              />
+              <input
+                className="input"
+                type="text"
+                value={props.newRide.flashPass}
+                placeholder={'is flash pass required?'}
+                name="flashPass"
+                onChange={props.handleChange}
+              />
+              <input
+                className="input"
+                type="text"
+                value={props.newRide.location}
+                placeholder={'ride location'}
+                name="parkLocation"
+                onChange={props.handleChange}
+              />
+              <input
+                className="input"
+                type="text"
+                value={props.newRide.year}
+                placeholder={'year made'}
+                name="year"
+                onChange={props.handleChange}
+              />
+              <input
+                className="input"
+                type="text"
+                value={props.newRide.history}
+                placeholder={'history'}
+                name="history"
+                onChange={props.handleChange}
+              />
+              <input
+                className="input"
+                type="text"
+                value={props.newRide.rating}
+                placeholder={'ride rating'}
+                name="rating"
+                onChange={props.handleChange}
+              />
+            </form>
+          </div>
+        </div>
+      )}
+    </>
   )
 }
 

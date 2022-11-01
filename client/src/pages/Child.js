@@ -7,7 +7,6 @@ import '../popUp.css'
 
 const Child = () => {
   const [rides, setRides] = useState([])
-  const [popUp, setPopUp] = useState(false)
 
   const getChildRides = async () => {
     try {
@@ -27,36 +26,39 @@ const Child = () => {
   const getRideDetails = (id) => {
     navigate(`/kidRideDetails/${id}`)
   }
+  const initialRideState = {
+    image: '',
+    name: '',
+    description: '',
+    height: '',
+    capacity: '',
+    flashPass: '',
+    parkLocation: '',
+    year: '',
+    history: '',
+    rating: ''
+  }
+  const [newRide, setNewRide] = useState(initialRideState)
 
-  const handleClick = () => {
-    setPopUp(!popUp)
+  const addRide = async (e) => {
+    e.preventDefault()
+    await axios.post('http://localhost:3001/api/kids', newRide)
+    await getChildRides()
+
+    setNewRide(initialRideState)
   }
 
-  if (popUp) {
-    document.body.classList.add('active-popUp')
-  } else {
-    document.body.classList.remove('active-popUp')
+  const handleChange = (e) => {
+    setNewRide({ ...newRide, [e.target.name]: e.target.value })
   }
-
-  const handleSubmit = () => {}
 
   return (
     <div>
-      <button onClick={handleClick} className="btn-popUp">
-        Add new ride
-      </button>
-
-      {popUp && (
-        <div className="popUp">
-          <div onClick={handleClick} className="overlay"></div>
-          <div className="popUp-content">
-            <button className="close-popUp" onClick={handleClick}>
-              CLOSE
-            </button>
-            <CreateChildRideForm onSubmit={handleSubmit} />
-          </div>
-        </div>
-      )}
+      <CreateChildRideForm
+        addRide={addRide}
+        handleChange={handleChange}
+        newRide={newRide}
+      />
       <div>
         {rides.map((ride) => (
           <div key={ride._id} onClick={() => getRideDetails(ride._id)}>
