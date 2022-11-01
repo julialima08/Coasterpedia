@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import RollerCoasterCard from '../components/RollerCoasterCard'
+import { useNavigate } from 'react-router-dom'
 
 const Child = () => {
   const [rides, setRides] = useState([])
@@ -19,12 +20,17 @@ const Child = () => {
     getChildRides()
   }, [])
 
+  let navigate = useNavigate()
+  const getRideDetails = (id) => {
+    navigate(`/kidRideDetails/${id}`)
+  }
+
   return (
     <div>
       <h1>Child</h1>
       <div>
         {rides.map((ride) => (
-          <div key={ride._id}>
+          <div key={ride._id} onClick={() => getRideDetails(ride._id)}>
             <RollerCoasterCard image={ride.image} name={ride.name} />
           </div>
         ))}
