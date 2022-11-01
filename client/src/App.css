@@ -33,3 +33,13 @@ font-size: 18px;
   margin-inline-end: 200px;
   padding: 0 10px 15px 10px ;
 }
+
+a:link, a:visited {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.body img {
+  width: 800px;
+  height: auto;
+}
