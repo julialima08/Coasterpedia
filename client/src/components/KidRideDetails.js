@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { useEffect } from 'react'
 
 function KidRideDetails({ ride, setRide }) {
@@ -9,6 +9,12 @@ function KidRideDetails({ ride, setRide }) {
     let response = await axios.get(`http://localhost:3001/api/kids/${id}`)
     console.log(response.data)
     setRide(response.data)
+  }
+
+  let navigate = useNavigate()
+  const deleteRide = async () => {
+    await axios.delete(`http://localhost:3001/api/kids/${id}`)
+    navigate('/kids')
   }
 
   useEffect(() => {
@@ -29,6 +35,7 @@ function KidRideDetails({ ride, setRide }) {
           <h4>Capacity: {ride.kid.capacity}</h4>
           <h4>FlashPass: {ride.kid.flashPass}</h4>
           <h4>Rating: {ride.kid.rating}</h4>
+          <button onClick={deleteRide}>Delete Ride</button>
         </>
       )}
     </div>
