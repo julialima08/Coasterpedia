@@ -1,5 +1,18 @@
-function adultRideDetails() {
+import axios from "axios"
+import { useParams } from "react-router-dom"
+import { useEffect } from "react"
+function AdultRideDetails(props) {
 
+    let { id } = useParams()
+    const getRideById = async () => {
+        let response = await axios.get(`http://localhost:3001/api/adults/${id}`)
+        console.log(response)
+        props.setRide(response.data)
+    }
+
+    useEffect(() => {
+        getRideById()
+    }, [])
     return (
         <div className="AdultRideDetails">
             <img src={props.image}></img>
@@ -17,4 +30,4 @@ function adultRideDetails() {
     )
 }
 
-export default adultRideDetails
+export default AdultRideDetails
