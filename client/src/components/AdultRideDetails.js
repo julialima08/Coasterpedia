@@ -1,5 +1,5 @@
 import axios from "axios"
-import { useParams } from "react-router-dom"
+import { Navigate, useNavigate, useParams } from "react-router-dom"
 import { useEffect } from "react"
 function AdultRideDetails({ ride, setRide }) {
 
@@ -9,7 +9,11 @@ function AdultRideDetails({ ride, setRide }) {
         console.log(response.data)
         setRide(response.data)
     }
-
+    let navigate = useNavigate()
+    const deleteRide = async () => {
+        await axios.delete(`http://localhost:3001/api/adults/${id}`)
+        navigate('/adults')
+    }
     useEffect(() => {
         getRideById()
     }, [])
@@ -28,8 +32,10 @@ function AdultRideDetails({ ride, setRide }) {
                     <h4>FlashPass: {ride.adult.flashPass}</h4>
                     <h4>Price: {ride.adult.rideFee}</h4>
                     <h4>Rating: {ride.adult.rating}</h4>
+                    <button onClick={deleteRide}  > delete ride</button >
                 </>
             )}
+
         </div>
     )
 }
