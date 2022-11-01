@@ -2,9 +2,12 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import RollerCoasterCard from '../components/RollerCoasterCard'
 import { useNavigate } from 'react-router-dom'
+import CreateChildRideForm from '../components/CreateChildRideForm'
+import '../popUp.css'
 
 const Child = () => {
   const [rides, setRides] = useState([])
+  const [popUp, setPopUp] = useState(false)
 
   const getChildRides = async () => {
     try {
@@ -25,9 +28,35 @@ const Child = () => {
     navigate(`/kidRideDetails/${id}`)
   }
 
+  const handleClick = () => {
+    setPopUp(!popUp)
+  }
+
+  if (popUp) {
+    document.body.classList.add('active-popUp')
+  } else {
+    document.body.classList.remove('active-popUp')
+  }
+
+  const handleSubmit = () => {}
+
   return (
     <div>
-      <h1>Child</h1>
+      <button onClick={handleClick} className="btn-popUp">
+        Add new ride
+      </button>
+
+      {popUp && (
+        <div className="popUp">
+          <div onClick={handleClick} className="overlay"></div>
+          <div className="popUp-content">
+            <button className="close-popUp" onClick={handleClick}>
+              CLOSE
+            </button>
+            <CreateChildRideForm onSubmit={handleSubmit} />
+          </div>
+        </div>
+      )}
       <div>
         {rides.map((ride) => (
           <div key={ride._id} onClick={() => getRideDetails(ride._id)}>
@@ -35,13 +64,6 @@ const Child = () => {
           </div>
         ))}
       </div>
-      {/* <div>
-        {rides.map((ride, i) => (
-          <div className="kidsDiv" key={i}>
-            <RollerCoasterCard name={ride.name} />
-          </div>
-        ))}
-      </div> */}
     </div>
   )
 }

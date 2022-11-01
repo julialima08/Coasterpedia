@@ -1,7 +1,7 @@
 const CreateChildRideForm = (props) => {
   return (
     <form className="form-list">
-      <button onSubmit={handleSubmit}>Submit</button>
+      <button className="submit">Submit</button>
       <input
         className="input"
         type="text"
