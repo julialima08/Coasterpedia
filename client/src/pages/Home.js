@@ -1,4 +1,4 @@
-// import homepic from '/Users/kevinblanco/ga_seir/unit3/Stackathon/Coasterpedia/client/src/pictures/homepic.png'
+import homepic from '../pictures/homepic.png'
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
           portfolio of regional parks, delivered by a diverse and empowered
           team, through industry-leading innovation and technology.
         </p>
-        {/* <img src={homepic} alt="homePic" /> */}
+        <img src={homepic} alt="homePic" />
       </div>
     </div>
   )

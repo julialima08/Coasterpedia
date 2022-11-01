@@ -7,17 +7,17 @@ const Header = () => {
         <h1>Coasterpedia</h1>
       </div>
       <div className="nav">
-        <nav>
-          <Link to="/">
-            <button>Home</button>
-          </Link>
-          <Link to="/kids">
-            <button>Child Rides</button>
-          </Link>
-          <Link to="/adults">
-            <button>Adult Rides</button>
-          </Link>
-        </nav>
+        {/* <nav> */}
+        <div className="homeLink">
+          <Link to="/">Home</Link>
+        </div>
+        <div className="childLink">
+          <Link to="/kids">Child Rides</Link>
+        </div>
+        <div className="adultLink">
+          <Link to="/adults">Adult Rides</Link>
+        </div>
+        {/* </nav> */}
       </div>
     </div>
   )
