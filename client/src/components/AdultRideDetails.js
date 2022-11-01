@@ -1,13 +1,13 @@
 import axios from "axios"
 import { useParams } from "react-router-dom"
 import { useEffect } from "react"
-function AdultRideDetails(props) {
+function AdultRideDetails({ ride, setRide }) {
 
     let { id } = useParams()
     const getRideById = async () => {
         let response = await axios.get(`http://localhost:3001/api/adults/${id}`)
-        console.log(response)
-        props.setRide(response.data)
+        console.log(response.data)
+        setRide(response.data)
     }
 
     useEffect(() => {
@@ -15,17 +15,21 @@ function AdultRideDetails(props) {
     }, [])
     return (
         <div className="AdultRideDetails">
-            <img src={props.image}></img>
-            <h2>{props.name}</h2>
-            <h3>Description: {props.description}</h3>
-            <h4>Year Made: {props.year}</h4>
-            <h4>Park Location: {props.parkLocation}</h4>
-            <h4>Height: {props.height}</h4>
-            <h4>Capacity: {props.capacity}</h4>
-            <h4>FlashPass: {props.flashPass}</h4>
-            <h4>Price: {props.rideFee}</h4>
-            <h4>Thrill Level: {props.thrill}</h4>
-            <h4>Rating: {props.rating}</h4>
+            {ride.adult && (
+                <>
+                    <img src={ride.adult.image}></img>
+                    <h2>{ride.adult.name}</h2>
+                    <h3>Description: {ride.adult.description}</h3>
+                    <h4>Year Made: {ride.adult.year}</h4>
+                    <h4>History: {ride.adult.history}</h4>
+                    <h4>Park Location: {ride.adult.parkLocation}</h4>
+                    <h4>Height: {ride.adult.height}</h4>
+                    <h4>Capacity: {ride.adult.capacity}</h4>
+                    <h4>FlashPass: {ride.adult.flashPass}</h4>
+                    <h4>Price: {ride.adult.rideFee}</h4>
+                    <h4>Rating: {ride.adult.rating}</h4>
+                </>
+            )}
         </div>
     )
 }
