@@ -116,6 +116,132 @@ const main = async () => {
       year: '2018',
       history: 'Arrow Dynamics Inc. ',
       rating: 'Maximum'
+    },
+    {
+      image:
+        'https://sf-static.sixflags.com/wp-content/uploads/Apocalypse-Banner-2-1.jpg',
+      name: 'Apocalypse',
+      description:
+        "Head into the bunker and get ready to launch into the front line of battle on this blazingly fast drive into sci-fi combat. Future war has turned the world into a bleak, burned out wasteland and you are living the aftermath. Apocalypse is the all-wooden roller coaster that rips through this ominous desert on an ultra-fast track. You've gotta ride like the wind to escape.",
+      height: '48"',
+      capacity: '40',
+      parkLocation: 'The Underground',
+      rideFee: 'No Additional Fees',
+      flashPass: 'Yes',
+      year: '2009',
+      history: 'Great Coasters International Inc. (GCII)',
+      rating: 'Moderate'
+    },
+    {
+      image:
+        'https://sf-static.sixflags.com/wp-content/uploads/2020/04/mn_FullThrottle_LA.jpg',
+      name: 'Full Throttle',
+      description:
+        "Here it is, the latest in a long history of world records set at Six Flags Magic Mountain:  Full Throttle. The number one tallest and fastest looping roller coaster in the world.  You are riding the best of the best and it can't be topped.",
+      height: '54"',
+      speed: '70 mph',
+      capacity: '32',
+      parkLocation: 'Six Flags Plaza',
+      rideFee: 'No Additional Fees',
+      flashPass: 'Yes',
+      year: '2018',
+      history: 'Great Coasters International Inc. (GCII)',
+      rating: 'Maximum'
+    },
+    {
+      image:
+        'https://sf-static.sixflags.com/wp-content/uploads/2020/04/sfmm_gold_rusher_1440x1533-1.jpg',
+      name: 'Gold Rusher',
+      description:
+        "Travel back to the days of the California gold rush, when brave prospectors traveled deep into the mountains looking for those elusive golden nuggets. You'll dive into an old mining car for this crazy ride through the treacherous hills of the frontier. Gold Rusher was the very first roller coaster at Six Flags Magic Mountain, and this rip roarin' ride is as fun today as it was the day it opened.",
+      height: '48"',
+      speed: '35 mph',
+      capacity: '36',
+      parkLocation: 'Metropolis',
+      rideFee: 'No Additional Fees',
+      flashPass: 'Yes',
+      year: '1971',
+      history: 'Arrow Dynamics Inc.',
+      rating: 'Moderate'
+    },
+    {
+      image:
+        'https://sf-static.sixflags.com/wp-content/uploads/SFMM_Lex-Luthor-Drop-of-Doom-Banner.jpg',
+      name: 'Lex Luthor: Drop of Doom',
+      description:
+        "LEX LUTHOR's corporation LexCorp is certainly up to no good.  LEX is bent on world domination, and he's starting by destroying your sanity on this thrilling descent. This is the tallest and fastest drop tower on the planet - the ultimate free fall!",
+      height: '48"',
+      speed: '85 mph',
+      capacity: '14',
+      parkLocation: 'DC Universe',
+      rideFee: 'No Additional Fees',
+      flashPass: 'Yes',
+      year: '2012',
+      history: 'Intamin AG',
+      rating: 'Maximum'
+    },
+    {
+      image:
+        'https://sf-static.sixflags.com/wp-content/uploads/SFMM_Ninja-Banner-2.jpg',
+      name: 'Ninja',
+      description: `There's a reason Ninja is known as "The Black Belt of Roller Coasters" This thrill is a suspended swinging roller coaster. There are only four of this kind in the entire U.S. and you're about to ride one of them. You're hanging from the track, which on this insane ride is above your head. Shoulder harnesses secure you in place but don't expect to just sit in one place — you're going to be swinging all over, a full 90 degrees each way along 2,700ft./822.9m of track above you.`,
+      height: '42"',
+      speed: '55 mph',
+      capacity: '40',
+      parkLocation: 'Samurai Summit',
+      rideFee: 'No Additional Fees',
+      flashPass: 'Yes',
+      year: '1988',
+      history: 'Arrow Dynamics Inc.',
+      rating: 'Moderate'
+    },
+    {
+      image:
+        'https://sf-static.sixflags.com/wp-content/uploads/SFMM_Superman-Escape-Krypton-Web-Banner.jpg',
+      name: 'SUPERMAN: Escape from Krypton',
+      description:
+        "Tunnel deep into SUPERMAN's icy Fortress of Solitude to face the ultimate challenge—1,315 feet of track that bends straight up into the sky 415 feet high!",
+      height: '48"',
+      speed: '100 mph',
+      capacity: '48',
+      parkLocation: 'Samurai Summit',
+      rideFee: 'No Additional Fees',
+      flashPass: 'Yes',
+      year: '2011',
+      history: 'Intamin',
+      rating: 'Maximum'
+    },
+    {
+      image:
+        'https://sf-static.sixflags.com/wp-content/uploads/SFMM_Tatsu-Banner-2.jpg',
+      name: 'Tatsu',
+      description:
+        "Tatsu is a flying roller coaster with an utterly unique way to ride—face down.  This mad twist puts you in a one-on-one stare-down with planet Earth, as you fly at speeds up to 62 miles per hour. The structure itself is 170 feet tall, but when combined with the height of the mountain it's sitting on, you're in for a 263-foot elevation change over the course of the journey.",
+      height: '54"',
+      speed: '62 mph',
+      capacity: '48',
+      parkLocation: 'Rapids Camp Crossing',
+      rideFee: 'No Additional Fees',
+      flashPass: 'Yes',
+      year: '2012',
+      history: 'Intamin',
+      rating: 'Maximum'
+    },
+    {
+      image:
+        'https://sf-static.sixflags.com/wp-content/uploads/2020/04/sixflagsbattleselects_148.sized__0.jpg',
+      name: "THE RIDDLER's Revenge",
+      description:
+        "You have to stand up to a villain like THE RIDDLER, and that's exactly what this record-setting stand-up roller coaster has in store for you. You'll have to take on this scoundrel standing, not sitting down in a chair, while it takes you through the highest, fastest, longest stand-up track in the world. Not only that, but it also has the biggest loop and the most upside-down action for any stand-up coaster.",
+      height: '54"',
+      speed: '65 mph',
+      capacity: '48',
+      parkLocation: 'Metropolis',
+      rideFee: 'No Additional Fees',
+      flashPass: 'Yes',
+      year: '1998',
+      history: 'Bolliger & Mabillard',
+      rating: 'Maximum'
     }
   ]
 
