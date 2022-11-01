@@ -18,8 +18,6 @@ const CreateChildRideForm = (props) => {
     togglePopUp()
   }
 
-  // const newRide = props.newRide
-
   return (
     <>
       <button onClick={togglePopUp} className="btn-popUp">
@@ -86,7 +84,7 @@ const CreateChildRideForm = (props) => {
               <input
                 className="input"
                 type="text"
-                value={props.newRide.location}
+                value={props.newRide.parkLocation}
                 placeholder={'ride location'}
                 name="parkLocation"
                 onChange={props.handleChange}
