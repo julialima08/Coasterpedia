@@ -6,9 +6,10 @@ const AdultDetailsPage = () => {
     return <div>
         <h1>hello</h1>
         <AdultRideDetails
-            name={ride.name}
+            ride={ride}
             setRide={setRide} />
-    </div>
+        {/* <button onClick={() => deleteRide()}  > delete ride</button > */}
+    </div >
 }
 
 export default AdultDetailsPage

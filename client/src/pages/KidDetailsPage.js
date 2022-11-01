@@ -6,8 +6,8 @@ const KidDetailsPage = () => {
 
   return (
     <div>
-      <h1>Hello</h1>
-      <KidRideDetails description={ride.description} setRide={setRide} />
+      <KidRideDetails ride={ride} setRide={setRide} />
+      {/* <button onClick={() => deleteRide()}>Delete Ride</button> */}
     </div>
   )
 }
