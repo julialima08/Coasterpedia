@@ -1,4 +1,4 @@
-import homepic from '/Users/kevinblanco/ga_seir/unit3/Stackathon/Coasterpedia/client/src/pictures/homepic.png'
+import homepic from '../pictures/homepic.png'
 
 const Home = () => {
   return (
