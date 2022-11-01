@@ -1,4 +1,5 @@
 function adultRideDetails() {
+
     return (
         <div className="AdultRideDetails">
             <img src={props.image}></img>
@@ -8,7 +9,8 @@ function adultRideDetails() {
             <h4>Park Location: {props.parkLocation}</h4>
             <h4>Height: {props.height}</h4>
             <h4>Capacity: {props.capacity}</h4>
-            <h4>FlashPass: {props.pass}</h4>
+            <h4>FlashPass: {props.flashPass}</h4>
+            <h4>Price: {props.rideFee}</h4>
             <h4>Thrill Level: {props.thrill}</h4>
             <h4>Rating: {props.rating}</h4>
         </div>
