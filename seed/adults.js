@@ -5,6 +5,7 @@ const Adult = require('../models/adult')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
+  Adult.collection.drop()
   const adults = [
     {
       image:

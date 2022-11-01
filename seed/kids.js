@@ -5,6 +5,7 @@ const Kid = require('../models/kid')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
+  Kid.collection.drop()
   const kids = [
     {
       name: 'Canyon Blaster',
