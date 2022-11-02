@@ -6,7 +6,7 @@
 
 #### [Julia's Github](https://github.com/julialima08) | [Kevin's Github](https://github.com/greensharpie) | [Aekangi's Github](https://github.com/Aekangi) |[Daniel's Github](https://github.com/dxs19) |
 
-#### [Trello](https://trello.com/b/EDYnvMlm/coasterpedia) | [Official Cite](blah)
+#### [Trello](https://trello.com/b/EDYnvMlm/coasterpedia) | [Official Cite](https://coasterpedia-app.herokuapp.com/)
 
 ---
 
@@ -43,13 +43,13 @@
 
 #### Kid Rides
 
-![Kid's page](https://fun-spot.com/wp-content/uploads/2015/04/Kiddie-Coaster.jpg)
+![Kid's page](https://ucarecdn.com/39694814-0508-4aab-8573-7e5137f6b567/)
 
 ---
 
-#### Adult Rides
+#### Create Rides PopUp
 
-![Adult's page](https://www.actualidadviajes.com/wp-content/uploads/2013/01/six-flags-mexico.jpeg)
+![Adult's page](https://ucarecdn.com/0976e596-63fb-4649-8a3e-fec6cfa78f28/)
 
 ---
 
