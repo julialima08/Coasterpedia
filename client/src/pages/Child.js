@@ -3,7 +3,7 @@ import axios from 'axios'
 import RollerCoasterCard from '../components/RollerCoasterCard'
 import { useNavigate } from 'react-router-dom'
 import CreateChildRideForm from '../components/CreateChildRideForm'
-import '../popUp.css'
+import '../CSS/popUp.css'
 
 const Child = () => {
   const [rides, setRides] = useState([])
