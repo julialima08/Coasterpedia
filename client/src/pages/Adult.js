@@ -61,12 +61,13 @@ const Adult = () => {
         handleChange={handleChange}
         newRide={newRide}
       />
-
-      {rides.map((ride) => (
-        <div key={ride._id} onClick={() => getRideDetails(ride._id)}>
-          <RollerCoasterCard image={ride.image} name={ride.name} />
-        </div>
-      ))}
+      <div className="cardHolder">
+        {rides.map((ride) => (
+          <div key={ride._id} onClick={() => getRideDetails(ride._id)}>
+            <RollerCoasterCard image={ride.image} name={ride.name} />
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

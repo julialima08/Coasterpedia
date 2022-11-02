@@ -59,7 +59,7 @@ const Child = () => {
         handleChange={handleChange}
         newRide={newRide}
       />
-      <div>
+      <div className="cardHolder">
         {rides.map((ride) => (
           <div key={ride._id} onClick={() => getRideDetails(ride._id)}>
             <RollerCoasterCard image={ride.image} name={ride.name} />
