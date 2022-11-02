@@ -3,7 +3,7 @@ import axios from 'axios'
 import RollerCoasterCard from '../components/RollerCoasterCard'
 import { useNavigate } from 'react-router-dom'
 import CreateChildRideForm from '../components/CreateChildRideForm'
-import '../popUp.css'
+import '../CSS/popUp.css'
 
 const Child = () => {
   const [rides, setRides] = useState([])
@@ -59,7 +59,7 @@ const Child = () => {
         handleChange={handleChange}
         newRide={newRide}
       />
-      <div>
+      <div className="cardHolder">
         {rides.map((ride) => (
           <div key={ride._id} onClick={() => getRideDetails(ride._id)}>
             <RollerCoasterCard image={ride.image} name={ride.name} />

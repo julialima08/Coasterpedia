@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import '../CSS/popUp.css'
 
 const CreateChildRideForm = (props) => {
   const [popUp, setPopUp] = useState(false)
@@ -20,9 +21,11 @@ const CreateChildRideForm = (props) => {
 
   return (
     <>
-      <button onClick={togglePopUp} className="btn-popUp">
-        Add new ride
-      </button>
+      <div className="buttonHolder">
+        <button onClick={togglePopUp} className="btn-popUp">
+          Add new ride
+        </button>
+      </div>
 
       {popUp && (
         <div className="popUp">
@@ -32,7 +35,6 @@ const CreateChildRideForm = (props) => {
               CLOSE
             </button>
             <form onSubmit={handleSubmit} className="form-list">
-              <button className="submit">Submit</button>
               <input
                 className="input"
                 type="text"
@@ -113,6 +115,7 @@ const CreateChildRideForm = (props) => {
                 name="rating"
                 onChange={props.handleChange}
               />
+              <button className="submit">Submit</button>
             </form>
           </div>
         </div>

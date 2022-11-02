@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+.header {
+  background-image: url('https://ucarecdn.com/d6858d77-6c9c-4e27-adda-71ffd3857b60/');
+  background-size: cover;
+  background-color: rgba(169, 169, 169, 0.747);
+}
+
+.title {
+  color:#839c9e;
+  text-shadow: 5px 5px 5px #000000;
+  height: 250px;
+  font-size: 50px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.homeLink a, .childLink a, .adultLink a{
+  text-decoration: none;
+}
+
+
+.nav{
+  display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+background-color: rgba(169, 169, 169, 0.747);
+height: 50px;
+padding-top: 5px; 
+font-size: 25px;
+color: #031736;
+align-items: center;
+}
+
+.body h2 {
+  font-size: 35px;
+}
+
+.body p {
+  margin-inline-start: 200px;
+  text-align: center;
+  margin-inline-end: 200px;
+  padding: 0 10px 15px 10px ;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.body img {
+  width: 800px;
+  height: auto;
+}
+
+.cardHolder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 430px);
+  column-gap: 6em;
+  row-gap: 20px;
+  justify-content: center;
+}
+.rollerCoasterCard {
+width: 350px;
+height: 350px;
+background-color: #839c9e;
+margin:20px;
+padding: 10px;
+border-radius: 25px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.rollerCoasterCard img {
+  width: 250px;
+  height: 250px;
+}

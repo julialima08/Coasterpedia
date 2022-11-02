@@ -6,7 +6,7 @@ require('dotenv').config()
 let dbUrl =
   process.env.NODE_ENV === 'production'
     ? process.env.MONGODB_URI
-    : 'mongodb://127.0.0.1:27017/<coasterpediaDatabase>'
+    : 'mongodb://127.0.0.1:27017/<database_name>'
 
 mongoose
   .connect(dbUrl)
