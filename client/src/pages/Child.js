@@ -10,8 +10,7 @@ const Child = () => {
 
   const getChildRides = async () => {
     try {
-      let response = await axios.get('http://localhost:3001/api/kids')
-      console.log(response.data.kids)
+      let response = await axios.get('/api/kids')
       setRides(response.data.kids)
     } catch (error) {
       console.log(error)
@@ -42,7 +41,7 @@ const Child = () => {
 
   const addRide = async (e) => {
     e.preventDefault()
-    await axios.post('http://localhost:3001/api/kids', newRide)
+    await axios.post('/api/kids', newRide)
     await getChildRides()
 
     setNewRide(initialRideState)

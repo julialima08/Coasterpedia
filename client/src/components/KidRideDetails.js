@@ -7,14 +7,13 @@ function KidRideDetails({ ride, setRide }) {
   let { id } = useParams()
 
   const getRideById = async () => {
-    let response = await axios.get(`http://localhost:3001/api/kids/${id}`)
-    console.log(response.data)
+    let response = await axios.get(`/api/kids/${id}`)
     setRide(response.data)
   }
 
   let navigate = useNavigate()
   const deleteRide = async () => {
-    await axios.delete(`http://localhost:3001/api/kids/${id}`)
+    await axios.delete(`/api/kids/${id}`)
     navigate('/kids')
   }
 

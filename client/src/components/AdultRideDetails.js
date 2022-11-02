@@ -5,13 +5,12 @@ import { useEffect } from 'react'
 function AdultRideDetails({ ride, setRide }) {
   let { id } = useParams()
   const getRideById = async () => {
-    let response = await axios.get(`http://localhost:3001/api/adults/${id}`)
-    console.log(response.data)
+    let response = await axios.get(`/api/adults/${id}`)
     setRide(response.data)
   }
   let navigate = useNavigate()
   const deleteRide = async () => {
-    await axios.delete(`http://localhost:3001/api/adults/${id}`)
+    await axios.delete(`/api/adults/${id}`)
     navigate('/adults')
   }
   useEffect(() => {
