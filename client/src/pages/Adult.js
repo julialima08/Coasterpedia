@@ -10,7 +10,7 @@ const Adult = () => {
 
   const getAdultRide = async () => {
     try {
-      let response = await axios.get('http://localhost:3001/api/adults')
+      let response = await axios.get('/api/adults')
       console.log(response.data.adults)
       setRides(response.data.adults)
     } catch (error) {
