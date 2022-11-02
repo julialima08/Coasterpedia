@@ -36,7 +36,7 @@ function AdultRideDetails({ ride, setRide }) {
             <h4>Year Made: {ride.adult.year}</h4>
             <h4>Rating: {ride.adult.rating}</h4>
           </div>
-          <button onClick={deleteRide}> delete ride</button>
+          <button onClick={deleteRide} className="delete-btn"> Delete Ride</button>
         </>
       )}
     </div>

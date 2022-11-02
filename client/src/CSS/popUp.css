@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Timmana');
+
 body.active-popUp {
-  overflow-y:hidden;
+  overflow-y: hidden;
 }
 
 .buttonHolder {
@@ -9,7 +11,9 @@ body.active-popUp {
 }
 
 .btn-popUp {
+  font-family: 'Timmana';
   padding: 10px;
+  padding-top: 15px;
   font-size: 10px;
   width: 90px;
   height: 30px;
@@ -18,12 +22,13 @@ body.active-popUp {
   align-items: center;
   flex-wrap: nowrap;
   background-color: #e4eced;
-  color:#031736;
+  color: #031736;
   border: none;
   border-radius: 25px;
 }
 
-.popUp, .overlay {
+.popUp,
+.overlay {
   width: 100%;
   height: 100%;
   top: 0;
@@ -35,7 +40,7 @@ body.active-popUp {
 }
 
 .overlay {
-  background: rgba(49,49,49,0.8);
+  background: rgba(49, 49, 49, 0.8);
 
 }
 
@@ -55,19 +60,22 @@ body.active-popUp {
 }
 
 .close-popUp {
+  font-family: 'Timmana';
   position: absolute;
+  height: 25px;
   top: 10px;
   right: 10px;
   padding: 5px 7px;
   background-color: #e4eced;
-  color:#031736;
+  color: #031736;
   border: none;
   border-radius: 25px;
 }
 
 
 .input {
-  background-color: #e4eced; 
+  font-family: 'Timmana';
+  background-color: #e4eced;
   border-radius: 25px;
   height: 30px;
   opacity: .8;
@@ -78,8 +86,11 @@ body.active-popUp {
 
 
 .submit {
+  font-family: 'Timmana';
+  font-size: larger;
+  padding-top: 3px;
   background-color: #e4eced;
-  color:#031736;
+  color: #031736;
   border: none;
   border-radius: 25px;
   height: 30px;
