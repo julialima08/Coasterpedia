@@ -86,7 +86,6 @@ a:visited {
 }
 
 .cardHolder {
-  cursor: pointer;
   display: grid;
   grid-template-columns: repeat(auto-fill, 430px);
   column-gap: 6em;
@@ -95,6 +94,7 @@ a:visited {
 }
 
 .rollerCoasterCard {
+  cursor: pointer;
   font-family: 'Timmana';
   width: 350px;
   height: 310px;
