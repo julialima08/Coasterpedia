@@ -118,5 +118,8 @@ a:visited {
 .rollerCoasterCard img {
   width: 250px;
   height: 250px;
+  object-fit: cover;
+  object-position: 25% 25%;
   border: 3px dashed #031736;
+
 }

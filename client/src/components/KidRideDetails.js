@@ -26,8 +26,8 @@ function KidRideDetails({ ride, setRide }) {
     <div className="KidRideDetails">
       {ride.kid && (
         <>
-          <h2>{ride.kid.name}</h2>
           <img src={ride.kid.image}></img>
+          <h2>{ride.kid.name}</h2>
           <h3>Description: {ride.kid.description}</h3>
           <div className="leftDescriptionKids">
             <h4>Height: {ride.kid.height}</h4>
@@ -39,8 +39,12 @@ function KidRideDetails({ ride, setRide }) {
             <h4>Manufacturer: {ride.kid.history}</h4>
             <h4>Year Made: {ride.kid.year}</h4>
           </div>
-          <h4>Rating: {ride.kid.rating}</h4>
-          <button onClick={deleteRide} className="delete-btn">Delete Ride</button>
+          <h4 className="rating">Rating: {ride.kid.rating}</h4>
+          <div className="buttonHolder">
+            <button onClick={deleteRide} className="delete-btn">
+              Delete Ride
+            </button>
+          </div>
         </>
       )}
     </div>

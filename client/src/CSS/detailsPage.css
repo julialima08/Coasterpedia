@@ -1,17 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Timmana');
+body {
+    margin: 0;
+    background-color: #dae5f3;
+}
+/* .AdultRideDetails{
+    background-color: #B0C4DE;
+} */
+
 
 .AdultRideDetails h2,
 .KidRideDetails h2 {
     font-family: 'Timmana';
-    font-size: 35px;
+    font-size: 40px;
+    font-stretch: ultra-expanded;
 }
 
-.AdultRideDetails img,
-.KidRideDetails img {
-    font-family: 'Timmana';
-    height: 50vh;
-    max-width: 1000px;
+.AdultRideDetails img {
+ height: 500px;
+width: auto;
+object-fit: cover;
+object-position: 25% 25%;
+font-family: 'Timmana';
 }
+
+.KidRideDetails img{
+font-family: 'Timmana';
+max-height: 500px;
+width: 100%;
+object-fit: cover;
+object-position: 60% 60%;
+/* transform: translate(-50%, -50%) */
+}
+
 
 .AdultRideDetails h3,
 .KidRideDetails h3 {
@@ -36,10 +56,33 @@
     font-size: 15px;
 }
 
-.delete-btn {
-    cursor: pointer;
-    font-family: 'Timmana';
-    padding-top: 3px;
-    height: 25px;
-
+.rating {
+    font-family: 'Timmana'; 
+    
 }
+.delete-btn {
+font-family: 'Timmana';
+padding-top: 3px;
+height: 45px;
+padding: 10px;
+font-size: 18px;
+width: 120px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: nowrap;
+background-color: #e4eced;
+color:#031736;
+border: 2px solid #031736;
+border-radius: 25px;
+margin-bottom: 15px;
+}
+
+.buttonHolder {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+
+
+ 
