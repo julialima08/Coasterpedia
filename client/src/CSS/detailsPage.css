@@ -1,35 +1,55 @@
-.AdultRideDetails h2, .KidRideDetails h2{
+@import url('https://fonts.googleapis.com/css?family=Timmana');
+
+.AdultRideDetails h2,
+.KidRideDetails h2 {
+    font-family: 'Timmana';
     font-size: 35px;
 }
 
 .AdultRideDetails img {
-    height: 500px;
-    width: auto;
-    object-fit: cover;
+ height: 500px;
+width: auto;
+object-fit: cover;
 object-position: 25% 25%;
+font-family: 'Timmana';
 }
+
 .KidRideDetails img{
-    max-height: 500px;
-    width: 100%;
-    object-fit: cover;
+font-family: 'Timmana';
+max-height: 500px;
+width: 100%;
+object-fit: cover;
 object-position: 60% 60%;
 transform: translate(-50%, -50%)
 }
 
 
-.AdultRideDetails h3, .KidRideDetails h3{
+.AdultRideDetails h3,
+.KidRideDetails h3 {
+    font-family: 'Timmana';
     font-size: 20px;
-    margin: 20px 100px ;
+    margin: 20px 100px;
 }
 
-.leftDescriptionAdults, .rightDescriptionAdults {
-display: grid;
-grid-template-columns: .5fr .5fr .5fr .5fr;
-font-size: 15px;
+.leftDescriptionAdults,
+.rightDescriptionAdults {
+    font-family: 'Timmana';
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr .5fr;
+    font-size: 15px;
 }
 
-.leftDescriptionKids, .rightDescriptionKids{
-display: grid;
-grid-template-columns: .5fr .5fr .5fr;
-font-size: 15px;
+.leftDescriptionKids,
+.rightDescriptionKids {
+    font-family: 'Timmana';
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr;
+    font-size: 15px;
+}
+
+.delete-btn {
+    font-family: 'Timmana';
+    padding-top: 3px;
+    height: 25px;
+
 }
