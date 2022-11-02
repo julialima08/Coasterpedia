@@ -1,3 +1,4 @@
+import detailsPage from '../CSS/detailsPage.css'
 import axios from 'axios'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useEffect } from 'react'
@@ -25,15 +26,19 @@ function KidRideDetails({ ride, setRide }) {
     <div className="KidRideDetails">
       {ride.kid && (
         <>
-          <img src={ride.kid.image}></img>
           <h2>{ride.kid.name}</h2>
+          <img src={ride.kid.image}></img>
           <h3>Description: {ride.kid.description}</h3>
-          <h4>Year Made: {ride.kid.year}</h4>
-          <h4>History: {ride.kid.history}</h4>
-          <h4>Park Location: {ride.kid.parkLocation}</h4>
-          <h4>Height: {ride.kid.height}</h4>
-          <h4>Capacity: {ride.kid.capacity}</h4>
-          <h4>FlashPass: {ride.kid.flashPass}</h4>
+          <div className="leftDescriptionKids">
+            <h4>Height: {ride.kid.height}</h4>
+            <h4>Park Location: {ride.kid.parkLocation}</h4>
+            <h4>Capacity: {ride.kid.capacity}</h4>
+          </div>
+          <div className="rightDescriptionKids">
+            <h4>FlashPass: {ride.kid.flashPass}</h4>
+            <h4>Manufacturer: {ride.kid.history}</h4>
+            <h4>Year Made: {ride.kid.year}</h4>
+          </div>
           <h4>Rating: {ride.kid.rating}</h4>
           <button onClick={deleteRide}>Delete Ride</button>
         </>
