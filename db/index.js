@@ -8,6 +8,8 @@ let dbUrl =
     ? process.env.MONGODB_URI
     : 'mongodb://127.0.0.1:27017/<database_name>'
 
+console.log('db ', dbUrl)
+
 mongoose
   .connect(dbUrl)
   .then(() => {
