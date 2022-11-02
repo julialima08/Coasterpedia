@@ -11,12 +11,13 @@ body.active-popUp {
 }
 
 .btn-popUp {
+  cursor: pointer;
   font-family: 'Timmana';
   padding: 10px;
   padding-top: 15px;
-  font-size: 10px;
-  width: 90px;
-  height: 30px;
+  font-size: 18px;
+  width: 120px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,6 +26,11 @@ body.active-popUp {
   color:#031736;
   border: 2px solid #031736;
   border-radius: 25px;
+  transition: all .2s ease-in-out;
+}
+
+.btn-popUp:hover {
+  transform: scale(1.05);
 }
 
 .popUp,
@@ -59,6 +65,7 @@ body.active-popUp {
 }
 
 .close-popUp {
+  cursor: pointer;
   font-family: 'Timmana';
   position: absolute;
   height: 25px;
@@ -85,6 +92,7 @@ body.active-popUp {
 
 
 .submit {
+  cursor: pointer;
   font-family: 'Timmana';
   font-size: larger;
   padding-top: 3px;
