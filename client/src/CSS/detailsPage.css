@@ -20,7 +20,7 @@ max-height: 500px;
 width: 100%;
 object-fit: cover;
 object-position: 60% 60%;
-transform: translate(-50%, -50%)
+/* transform: translate(-50%, -50%) */
 }
 
 

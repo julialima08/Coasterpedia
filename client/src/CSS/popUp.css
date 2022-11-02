@@ -22,8 +22,8 @@ body.active-popUp {
   align-items: center;
   flex-wrap: nowrap;
   background-color: #e4eced;
-  color: #031736;
-  border: none;
+  color:#031736;
+  border: 2px solid #031736;
   border-radius: 25px;
 }
 
@@ -52,7 +52,6 @@ body.active-popUp {
   line-height: 1.4;
   padding: 44px 88px;
   border-radius: 3px;
-  /* width: 600px; */
   max-height: 80vh;
   background-color: #031736;
   overflow: auto;
