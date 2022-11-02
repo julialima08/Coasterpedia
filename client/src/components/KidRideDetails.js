@@ -40,7 +40,7 @@ function KidRideDetails({ ride, setRide }) {
             <h4>Year Made: {ride.kid.year}</h4>
           </div>
           <h4>Rating: {ride.kid.rating}</h4>
-          <button onClick={deleteRide}>Delete Ride</button>
+          <button onClick={deleteRide} className="delete-btn">Delete Ride</button>
         </>
       )}
     </div>
