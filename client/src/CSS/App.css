@@ -1,14 +1,30 @@
 body {
   margin: 0;
+  background-color: #e6e6e6;
 }
 
 .App {
   text-align: center;
 }
 .header {
-  background-image: url('https://ucarecdn.com/d6858d77-6c9c-4e27-adda-71ffd3857b60/');
   background-size: cover;
   background-color: rgba(169, 169, 169, 0.747);
+}
+
+.header-pic {
+  z-index: 5;
+  width: 100%;
+  height: 250px;
+
+}
+
+.title h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 60px;
+
 }
 
 .title {
@@ -16,8 +32,8 @@ body {
   text-shadow: 5px 5px 5px #000000;
   height: 250px;
   font-size: 50px;
-  padding-top: 10px;
-  padding-bottom: 40px;
+  position: relative;
+  text-align: center;
 }
 
 .homeLink a, .childLink a, .adultLink a{
