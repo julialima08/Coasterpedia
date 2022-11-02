@@ -22,13 +22,8 @@ body.active-popUp {
   align-items: center;
   flex-wrap: nowrap;
   background-color: #e4eced;
-<<<<<<< HEAD
   color:#031736;
-  border: 2px #031736;
-=======
-  color: #031736;
-  border: none;
->>>>>>> e129469fd8190a5208748cf14f82433c143be124
+  border: 2px solid #031736;
   border-radius: 25px;
 }
 
