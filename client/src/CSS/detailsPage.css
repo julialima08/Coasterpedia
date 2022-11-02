@@ -3,10 +3,6 @@ body {
     margin: 0;
     background-color: #dae5f3;
 }
-/* .AdultRideDetails{
-    background-color: #B0C4DE;
-} */
-
 
 .AdultRideDetails h2,
 .KidRideDetails h2 {
@@ -16,7 +12,7 @@ body {
 }
 
 .AdultRideDetails img {
- height: 500px;
+height: 500px;
 width: auto;
 object-fit: cover;
 object-position: 25% 25%;
@@ -29,7 +25,6 @@ max-height: 500px;
 width: 100%;
 object-fit: cover;
 object-position: 60% 60%;
-/* transform: translate(-50%, -50%) */
 }
 
 
@@ -57,8 +52,7 @@ object-position: 60% 60%;
 }
 
 .rating {
-    font-family: 'Timmana'; 
-    
+    font-family: 'Timmana';
 }
 .delete-btn {
 font-family: 'Timmana';
@@ -82,7 +76,4 @@ margin-bottom: 15px;
     display: flex;
     justify-content: center;
     margin: 20px;
-  }
-
-
- 
+}
