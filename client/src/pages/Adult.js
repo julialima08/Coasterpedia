@@ -45,7 +45,7 @@ const Adult = () => {
   const addRide = async (e) => {
     e.preventDefault()
     console.log('addRide')
-    await axios.post('http://localhost:3001/api/adults', newRide)
+    await axios.post('/api/adults', newRide)
     await getAdultRide()
     setNewRide(initialRideState)
   }
