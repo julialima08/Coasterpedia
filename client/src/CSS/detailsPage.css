@@ -37,6 +37,7 @@
 }
 
 .delete-btn {
+    cursor: pointer;
     font-family: 'Timmana';
     padding-top: 3px;
     height: 25px;

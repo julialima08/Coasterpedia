@@ -11,6 +11,7 @@ body.active-popUp {
 }
 
 .btn-popUp {
+  cursor: pointer;
   font-family: 'Timmana';
   padding: 10px;
   padding-top: 15px;
@@ -64,6 +65,7 @@ body.active-popUp {
 }
 
 .close-popUp {
+  cursor: pointer;
   font-family: 'Timmana';
   position: absolute;
   height: 25px;
@@ -90,6 +92,7 @@ body.active-popUp {
 
 
 .submit {
+  cursor: pointer;
   font-family: 'Timmana';
   font-size: larger;
   padding-top: 3px;
