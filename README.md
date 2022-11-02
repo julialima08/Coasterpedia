@@ -47,7 +47,7 @@
 
 ---
 
-#### Adult Rides
+#### Create Rides PopUp
 
 ![Adult's page](https://ucarecdn.com/0976e596-63fb-4649-8a3e-fec6cfa78f28/)
 
