@@ -80,4 +80,6 @@ align-items: center;
 .rollerCoasterCard img {
   width: 250px;
   height: 250px;
+  object-fit: cover;
+  object-position: 25% 25%;
 }
